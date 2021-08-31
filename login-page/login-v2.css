@@ -1,0 +1,66 @@
+/* --- OPTIONAL --- */
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500$display=swap');
+
+/* --- DEFAULT html SETTINGS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhai 2', sans-serif;
+    background: #FAF7FF;
+}
+
+/* --- OPTIONAL --- */
+html, body {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    place-items: center;
+}
+
+/* --- FORM SETTINGS --- */
+form {
+    background: #FAF7FF;
+    max-width: 350PX;
+    width: 99vw;
+    padding: 25px 30px;
+    border-radius: 10px;
+    border: 1px solid #c0c0c0;
+    box-shadow: 1px 1px 1px rgb(0 0 0 / 25%);
+}
+
+form h1 {
+    color: blue;
+}
+
+fieldset {
+    margin: 10px 0;
+    border: 0;
+}
+
+/* --- remove default decorations --- */
+input, button {
+    outline: none;
+    border: none;
+}
+
+/* --- add custom decorations --- */
+fieldset input {
+    cursor: text;
+    padding: 0 2px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+fieldset button {
+    width: 80%;
+    margin-top: 15px;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid blue;
+    border-radius: 10px;
+}
+
+fieldset button:hover {
+    background-color: blue;
+}
