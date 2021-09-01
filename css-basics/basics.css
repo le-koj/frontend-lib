@@ -1,0 +1,45 @@
+/* --- BASE html SETTINGS --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+br {
+    border: 5px solid blue;
+}
+
+
+/* --- GLOBAL VARIABLES --- */
+:root {
+    --text-color: hsl(145, 63%, 49%)
+}
+
+#globvar {
+    background: brown;
+    width: 200px;
+    margin-top: 20px !important;
+    margin: auto;
+    color: var(--text-color); /* global variable use case */
+}
+
+/* --- SQUARE LAYOUT --- */
+#square {
+    background: cadetblue;
+    display: block;
+    width: 25rem;
+    margin: 10px;
+    aspect-ratio: 2/2; /* square setting */
+}
+
+/* --- CENTER ITEM --- */
+#center {
+    background: blueviolet; 
+    display: block; 
+
+    /* center settings */
+    width: 25rem;
+    margin: auto;
+    height: 200px;
+}
+
