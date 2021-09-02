@@ -5,8 +5,11 @@
     box-sizing: border-box;
 }
 
-br {
-    border: 5px solid blue;
+hr {
+    width: 100vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
 }
 
 
@@ -43,3 +46,28 @@ br {
     height: 200px;
 }
 
+/* --- DROP CAP EFFECT --- */
+#drop-cap::first-letter {
+    font-size: 200px;
+    color: darkblue;
+
+    /* optional settings */
+    margin: 10px;
+    width: 90vw;
+    text-align: center;
+}
+
+
+/* --- INSERT CONTENT BEFORE --- */
+.before::before {
+    content: "I am an inset text before the main test...";
+    color: var(--text-color);
+    font-weight: bolder;
+}
+
+/* --- INSERT TEXT AFTER --- */
+.after::after {
+    content: "....I am an inserted text after main text";
+    color: var(--text-color);
+    font-weight: 900;
+}
